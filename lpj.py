@@ -1,9 +1,9 @@
-file=open('hello.txt','r+')
-file2=open('hello2.txt',"r+")
-count=1
-for i in file:
-    if count%2!=0:
-        file2.writelines(i)
+file1=open("fil1.txt","r")
+file2=open("fil2.txt","w")
+data=file1.readlines()
+count=0
+for i in data:
     count+=1
-data=file2.readlines()
-print(data)
+    if(count%2!=0):
+       file2.write(i)
+        
