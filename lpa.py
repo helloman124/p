@@ -12,7 +12,8 @@ for char in string:
     else:
         result += char
 print("The converted stringis:",result)
-////program to next charecter of string using built in function
+
+////program to next charecter of string using user defined function
 def next_alphabet(char):
     if char=='z':
         return 'a'
