@@ -33,7 +33,4 @@ def main():
 
 main()
 
-    else:
-        return string[-1]+reverse(string[:-1])
-print(reverse("hello man"))
 
