@@ -1,4 +1,3 @@
-//program to next charecter of string using built in function
 string = input("Enter a string of 4 characters: ")
 result = ""
 for char in string:
@@ -12,26 +11,4 @@ for char in string:
     else:
         result += char
 print("The converted stringis:",result)
-
-////program to next charecter of string using user defined function
-def next_alphabet(char):
-    if char=='z':
-        return 'a'
-    elif char=='Z':
-        return 'A'
-    else:
-        return chr(ord(char)+1)
-    
-def main():
-    string=input("enter a string of 4 characters:")
-    result=""
-    if(len(string))!=4:
-        print("invalid input")
-        return 
-    for char in string:
-        result=result+next_alphabet(char)
-    print(result)
-
-main()
-
 
